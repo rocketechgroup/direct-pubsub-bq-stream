@@ -26,7 +26,7 @@ gcloud pubsub topics create publicdata_google_trends_top_terms --schema publicda
 ```
 gcloud pubsub subscriptions create publicdata_google_trends_top_terms_no_topic_schema \
   --topic=publicdata_google_trends_top_terms \
-  --bigquery-table=rocketech-de-pgcp-sandbox:direct_pubsub_to_bq.google_trends_top_terms_no_topic_schema
+  --bigquery-table=<your gcp project id>:direct_pubsub_to_bq.google_trends_top_terms_no_topic_schema
 ``` 
 
 > With Schema
