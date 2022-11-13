@@ -1,0 +1,22 @@
+[
+  {
+    "name": "subscription_name",
+    "type": "string"
+  },
+  {
+    "name": "message_id",
+    "type": "string"
+  },
+  {
+    "name": "publish_time",
+    "type": "timestamp"
+  },
+  {
+    "name": "data",
+    "type": "json"
+  },
+  {
+    "name": "attributes",
+    "type": "json"
+  }
+]

@@ -64,7 +64,7 @@ query_job = client.query(query=rendered_query)
 results = query_job.result()
 for r in results:
     message = {f: r[f] if type(r[f]) != datetime.date else r[f].isoformat() for f in fields}
-    future = publisher.publish(topic_name, json.dumps(message).encode('utf-8'))
+    future = publisher.publish(topic_name, json.dumps(message).encode('utf-8'), origin='webapp_a', user="moo")
     published_futures.append(future)
 
 futures.wait(published_futures, return_when=futures.ALL_COMPLETED)
